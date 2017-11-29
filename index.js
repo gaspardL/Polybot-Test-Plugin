@@ -17,3 +17,4 @@ var ping3 = {
 };
 
 module.exports.bindings = [ping3];
+module.exports.name = "ping3";
