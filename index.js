@@ -11,10 +11,11 @@ var ping3 = {
             result: {message:"5"}
         }
     ],
-    callback : function(reply, params, message){
+    callback : function(reply, params){
         reply("pong3 "+params.message);
     }
 };
 
 module.exports.bindings = [ping3];
 module.exports.name = "ping3";
+module.exports.init = function(){};
