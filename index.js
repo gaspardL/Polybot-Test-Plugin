@@ -1,21 +1,21 @@
-var ping3 = {
-    name : "ping3",
-    description:"Simple ping/pong permettant des mesures de temps de réponse",
+var edt = {
+    name : "Prochain cours",
+    description:"Permet de connaitre l'intitulé et la salle de son prochain cours",
     patterns : [
-        "ping3 {message}",
+        "prochain cours",
     ],
     synonyms :{},
     tests :[
         {
-            input: "ping3 5",
-            result: {message:"5"}
+            input: "prochain cours",
+            result: {}
         }
     ],
     callback : function(reply, params){
-        reply("pong3 "+params.message);
+        reply("Votre prochain cours est PROJET Fin d'études dans 13 minutes en salle E-106 pendant 4 heures");
     }
 };
 
-module.exports.bindings = [ping3];
-module.exports.name = "ping3";
+module.exports.bindings = [edt];
+module.exports.name = "edt";
 module.exports.init = function(){};
